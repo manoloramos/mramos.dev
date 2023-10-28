@@ -1,6 +1,6 @@
 /**
- * Project: MRAMOS.DEV
- * Author: mramos.dev@pm.me
+ * Project: manoloramos.dev
+ * Author: Manolo Ramos
  * Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
  * File created on: 24-10-2023 12:49:20
