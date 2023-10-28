@@ -6,7 +6,7 @@
  *  File created on: 24-10-2023 20:20:05
  * @ Last modified on: 25-10-2023 19:48:09
  * 
- *  Description: Main Layout component file
+ *  Description: Index File for Layout components
  */
 
 import Container from './Container/Container';
