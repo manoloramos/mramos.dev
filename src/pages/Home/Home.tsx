@@ -4,7 +4,7 @@
  *  Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 25-10-2023 20:04:05
- *  Last modified on: 31-10-2023 12:06:20
+ *  Last modified on: 31-10-2023 16:48:06
  * 
  *  Description: Home page
  */
@@ -27,7 +27,7 @@ const Home: React.FC = () => {
 
 				<h2>Hello, world!</h2>
 				<h3>Welcome to my personal website 👋🏻</h3>
-				<h3>This site is beign developed using React + Vite</h3>
+				<h3>This site is beign developed using Vite + React</h3>
 			</div>
 		</Container>
 	);
