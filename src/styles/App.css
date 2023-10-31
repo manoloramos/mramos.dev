@@ -5,17 +5,17 @@
   text-align: center;
 }
 
+@media only screen and (max-width: 368px) {
+  .logo {
+    height: 5em !important;
+  }
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 @keyframes logo-spin {
@@ -27,9 +27,41 @@
   }
 }
 
+@keyframes logo-spin-glow {
+  from {
+    filter: drop-shadow(0 0 0em #fff);
+  }
+  to {
+    filter: drop-shadow(0 0 2em #61dafbc6);
+  }
+}
+
+@keyframes logo-grow {
+  from {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0em #fff);
+  }
+  to {
+    transform: scale(1.1) ;
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+}
+
+@keyframes logo-grow-glow {
+  from {
+    filter: drop-shadow(0 0 0em #fff);
+  }
+  to {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  a:nth-of-type(1) .logo {
+    animation: logo-grow infinite 1.5s alternate, logo-grow-glow infinite 1.5s alternate;
+  }
+  a:nth-of-type(2) .logo.react {
+    animation: logo-spin infinite 20s linear, logo-spin-glow infinite 1.5s alternate;
   }
 }
 
