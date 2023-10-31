@@ -17,6 +17,7 @@
     "url": "https://github.com/manoloramos/manoloramos.dev"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -25,8 +26,8 @@
     "lodash": "^4.17.21",
     "prettier": "^3.0.3",
     "react": "^18.2.0",
-    "react-hook-form": "^7.47.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.47.0",
     "styled-components": "^6.1.0"
   },
   "devDependencies": {
