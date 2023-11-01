@@ -9,3 +9,6 @@
  *  Description: Index file for Text components
  */
 
+import TextBlock from "./TextBlock/TextBlock";
+
+export default TextBlock;
