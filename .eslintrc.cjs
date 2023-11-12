@@ -15,6 +15,7 @@ module.exports = {
       { allowConstantExport: true },
     ],
     "semi": "off",
-    "@typescript-eslint/semi": "error"
+    "@typescript-eslint/semi": "error",
+    "keyword-spacing": 2
   },
 }
