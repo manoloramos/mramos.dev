@@ -15,7 +15,7 @@ const styles = {
 		height: '5rem',
 		display: 'flex',
 		flex: '1 1 auto',
-		flexDirection: 'column',
+		flexFlow: 'column nowrap',
 		alignItems: 'center',
 		justifyContent: 'space-around',
 		gap: '1.5rem'
