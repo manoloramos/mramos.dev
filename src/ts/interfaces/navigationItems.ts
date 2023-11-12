@@ -11,7 +11,8 @@
 
 interface navigationItems {
 	url: string,
-	label: string
+	label: string,
+	icon?: string
 }
 
 export { type navigationItems };
