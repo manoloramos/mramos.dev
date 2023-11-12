@@ -4,13 +4,13 @@
  *  Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 25-10-2023 20:04:05
- *  Last modified on: 31-10-2023 16:48:06
+ *  Last modified on: 12-11-2023 13:24:42
  * 
  *  Description: Home page
  */
 
-import React from "react";
 import Container from "@/components/layout";
+import React from "react";
 import reactLogo from '@assets/icons/react.svg';
 import viteLogo from '@assets/icons/vite.svg';
 
