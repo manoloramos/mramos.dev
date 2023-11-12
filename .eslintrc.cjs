@@ -16,6 +16,13 @@ module.exports = {
     ],
     "semi": "off",
     "@typescript-eslint/semi": "error",
-    "keyword-spacing": 2
+    "keyword-spacing": 2,
+    "sort-imports": ["error", {
+      "ignoreCase": false,
+      "ignoreDeclarationSort": false,
+      "ignoreMemberSort": false,
+      "memberSyntaxSortOrder": ["all", "single", "multiple", "none"],
+      "allowSeparatedGroups": false
+  }]
   },
 }
