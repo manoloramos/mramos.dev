@@ -12,13 +12,13 @@
 import React from "react";
 
 interface ContainerProps {
-	children: React.ReactElement
+	children: React.ReactElement[]
 }
 
 const Container: React.FC<ContainerProps> = ({
 	children
 }) => {
-	return(
+	return (
 		<>
 			{children}
 		</>
