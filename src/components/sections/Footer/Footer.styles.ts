@@ -11,13 +11,13 @@
 
 const styles = {
 	footer: {
-		padding: '3rem 0',
+		width: '100%',
+		padding: '2rem 0',
 		height: '5rem',
 		display: 'flex',
-		flex: '1 1 auto',
 		flexFlow: 'column nowrap',
 		alignItems: 'center',
-		justifyContent: 'space-around',
+		justifyContent: 'center',
 		gap: '1.5rem'
 	},
 	section: {
