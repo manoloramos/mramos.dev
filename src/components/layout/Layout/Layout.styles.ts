@@ -16,7 +16,9 @@ const styles = {
 		flexFlow: 'column nowrap'
 	},
 	main: {
-		marginTop: '5rem'
+		width: '100%',
+		marginTop: '5rem',
+		flex: '1 1'
 	}
 };
 
