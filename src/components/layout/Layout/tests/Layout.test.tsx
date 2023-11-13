@@ -4,24 +4,24 @@
  *  Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 24-10-2023 20:57:11
- *  Last modified on: 01-11-2023 13:44:52
+ *  Last modified on: 13-11-2023 16:43:21
  * 
- *  Description: Test file for the Container component.
+ *  Description: Test file for the Layout component.
  */
 
+import Layout from "../Layout";
 import { render, waitFor } from "@testing-library/react";
-import Container from "../Container";
 
-describe('Container component', () => {
+describe('Layout component', () => {
 	it('should render the component',() => {
-		const container = render(
-			<Container>
+		const layout = render(
+			<Layout>
 				<span>Test</span>
-			</Container>
+			</Layout>
 		);
 
 		waitFor(() => {
-			expect(container).toBeInTheDocument();
+			expect(layout).toBeInTheDocument();
 		});
 	});
 });

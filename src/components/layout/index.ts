@@ -9,6 +9,6 @@
  *  Description: Index File for Layout components
  */
 
-import Container from './Container/Container';
+import Layout from './Layout/Layout';
 
-export default Container;
+export default Layout;
