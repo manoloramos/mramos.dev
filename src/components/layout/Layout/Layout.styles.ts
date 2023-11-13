@@ -4,15 +4,20 @@
  *  Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 24-10-2023 20:20:18
- *  Last modified on: 24-10-2023 20:47:36
+ * @ Last modified on: 13-11-2023 16:25:15
  * 
- *  Description:
+ *  Description: Layout component styles.
  */
 
 const styles = {
-	"layout": {
-		
+	layout: {
+		minHeight: '100vh',
+		display: 'flex',
+		flexFlow: 'column nowrap'
+	},
+	main: {
+		marginTop: '5rem'
 	}
-}
+};
 
 export default styles;
