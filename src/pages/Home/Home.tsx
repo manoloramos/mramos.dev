@@ -4,19 +4,19 @@
  *  Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 25-10-2023 20:04:05
- *  Last modified on: 12-11-2023 13:24:42
+ *  Last modified on: 13-11-2023 16:51:29
  * 
  *  Description: Home page
  */
 
-import Container from "@/components/layout";
+import Layout from "@/components/layout";
 import React from "react";
 import reactLogo from '@assets/icons/react.svg';
 import viteLogo from '@assets/icons/vite.svg';
 
 const Home: React.FC = () => {
 	return (
-		<Container>
+		<Layout>
 			<div>
 				<a href="https://vitejs.dev" target="_blank">
 					<img src={viteLogo} className="logo" alt="Vite logo" />
@@ -29,7 +29,7 @@ const Home: React.FC = () => {
 				<h3>Welcome to my personal website 👋🏻</h3>
 				<h3>This site is beign developed using Vite + React</h3>
 			</div>
-		</Container>
+		</Layout>
 	);
 };
 
