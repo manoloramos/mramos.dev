@@ -11,7 +11,7 @@
 
 enum FooterLinks {
 	Vite = 'https://vitejs.dev',
-	Netlify = 'https://www.netlify.com/',
+	Netlify = 'https://app.netlify.com/sites/manoloramos/deploys',
 	GitHub = 'https://github.com/manoloramos'
 }
 
