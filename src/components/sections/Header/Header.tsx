@@ -4,12 +4,12 @@
  *  Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 06-11-2023 12:49:52
- * @ Last modified on: 13-11-2023 17:35:13
+ *  Last modified on: 27-11-2023 17:08:29 
  * 
  *  Description: Header component. Contains the main navigation elements and the light/dark toggle.
  */
 
-import { NavPaths } from '@/ts/enums/navigationPaths';
+import { NavPaths } from '@/ts/enums/navigation';
 import React from 'react';
 import _ from 'lodash';
 import externalLink from '@assets/icons/external_link.svg';
@@ -77,7 +77,7 @@ const Header: React.FC<HeaderProps> = ({
 				</div>
 				<div css={styles.themeButtonContainer}>
 					<button onClick={themeSwitch}>
-						<img src="#" alt="Theme switch" />
+						<img src="#" alt="Theme" />
 					</button>
 				</div>
 			</div>
