@@ -4,7 +4,7 @@
  * Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
  * File created on: 06-11-2023 12:49:52
- * @ Last modified on: 13-11-2023 17:44:40
+ * @ Last modified on: 27-11-2023 19:28:25 
  * 
  * Description: Header component styles.
  */
@@ -34,6 +34,7 @@ const styles = {
 		flexFlow: 'row nowrap',
 		justifyContent: 'space-between',
 		alignItems: 'center',
+		gap: '2rem',
 		'@media screen and (min-width: 700px)': {
 			display: 'flex',
 			padding: '0'
@@ -61,14 +62,27 @@ const styles = {
 			display: 'flex',
 			flexFlow: 'row nowrap',
 			gap: '2rem',
+			'& a': {
+				whiteSpace: 'nowrap' as const,
+				'& :hover': {
+					color: '#fff'
+				},
+			},
+			'& div:last-child a': {
+				display: 'flex',
+				alignItems: 'baseline'
+			},
 			'& a img': {
 				height: '0.75rem',
-				paddingLeft: '0.5rem'
+				paddingLeft: '0.5rem',
+				filter: 'invert(33%)'
 			}
 		}
 	},
 	themeButtonContainer: {
-
+		'@media screen and (min-width: 700px)': {
+			alignSelf: 'flex-start'
+		}
 	}
 };
 
