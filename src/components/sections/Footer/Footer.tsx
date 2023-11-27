@@ -4,12 +4,12 @@
  *  Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 06-11-2023 12:49:57
- *  Last modified on: 13-11-2023 16:18:07
+ *  Last modified on: 27-11-2023 19:16:04 
  * 
  *  Description: Footer component. Contains copyright, links & last build info.
  */
 
-import { FooterLinks } from "@/ts/enums/footerLinks";
+import { FooterLinks } from "@/ts/enums/navigation";
 import React from "react";
 import _ from "lodash";
 import github from '@assets/icons/github_lm.svg';
@@ -54,9 +54,6 @@ const Footer: React.FC<FooterProps> = () => {
 					}
 				</nav>
 			</section>
-			<div>
-				<span>Last built on: <time>12/11/2023</time></span>
-			</div>
 		</footer>
 	);
 };
