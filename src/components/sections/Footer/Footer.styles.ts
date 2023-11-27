@@ -4,7 +4,7 @@
  * Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
  * File created on: 06-11-2023 12:49:57
- * @ Last modified on: 12-11-2023 20:48:16
+ * @ Last modified on: 27-11-2023 19:19:10 
  * 
  * Description: Footer styles.
  */
@@ -40,6 +40,10 @@ const styles = {
 			display: 'flex',
 			alignItems: 'center',
 			lineHeight: '1.25rem',
+			'& :hover': {
+				textDecorationLine: 'underline',
+				textDecorationThickness: '1.5px'
+			},
 			'& img': {
 				display: 'inline-block',
 				maxHeight: '1.25rem',
