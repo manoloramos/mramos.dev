@@ -4,7 +4,7 @@
  * Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
  * File created on: 06-11-2023 12:49:52
- * @ Last modified on: 27-11-2023 19:28:25 
+ * @ Last modified on: 28-11-2023 12:53:24 
  * 
  * Description: Header component styles.
  */
@@ -48,6 +48,7 @@ const styles = {
 			alignItems: 'center',
 			gap: '0.25rem',
 			marginBottom: '1.25rem',
+			fontWeight: '700',
 			'& img': {
 				height: '2.5rem',
 				width: '2.5rem',
@@ -60,17 +61,25 @@ const styles = {
 		},
 		'& > nav': {
 			display: 'flex',
+			alignItems: 'center',
 			flexFlow: 'row nowrap',
 			gap: '2rem',
 			'& a': {
+				border: '2px solid transparent',
+				borderLeft: 'none',
+				borderRight: 'none',
+				borderRadius: '0',
+				fontWeight: '500',
 				whiteSpace: 'nowrap' as const,
-				'& :hover': {
-					color: '#fff'
-				},
+				paddingBottom: '0.15rem',
+			},
+			'& a:hover': {
+				color: 'grey',
+				borderBottom: '2px solid skyblue'
 			},
 			'& div:last-child a': {
 				display: 'flex',
-				alignItems: 'baseline'
+				alignItems: 'center'
 			},
 			'& a img': {
 				height: '0.75rem',
