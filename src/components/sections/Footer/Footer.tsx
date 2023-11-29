@@ -4,7 +4,7 @@
  *  Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 06-11-2023 12:49:57
- *  Last modified on: 27-11-2023 19:16:04 
+ *  Last modified on: 29-11-2023 17:54:50 
  * 
  *  Description: Footer component. Contains copyright, links & last build info.
  */
@@ -31,7 +31,7 @@ const Footer: React.FC<FooterProps> = () => {
 		<footer css={{...styles.footer}}>
 			<section css={{...styles.section}}>
 				<div>
-					<span>Made with <u>♥</u> by Manolo Ramos</span>
+					<span>Made with <u>♥</u> by <abbr title="💽 Last built on: 29-11-2023 17:52">Manolo Ramos</abbr></span>
 				</div>
 			</section>
 			<section css={{...styles.section}}>
