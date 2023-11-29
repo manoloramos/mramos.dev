@@ -4,7 +4,7 @@
  * Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
  * File created on: 06-11-2023 12:49:52
- * @ Last modified on: 28-11-2023 12:53:24 
+ * @ Last modified on: 29-11-2023 16:58:33 
  * 
  * Description: Header component styles.
  */
@@ -69,7 +69,7 @@ const styles = {
 				borderLeft: 'none',
 				borderRight: 'none',
 				borderRadius: '0',
-				fontWeight: '500',
+				fontWeight: '600',
 				whiteSpace: 'nowrap' as const,
 				paddingBottom: '0.15rem',
 			},
