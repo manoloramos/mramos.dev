@@ -4,7 +4,7 @@
  * Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
  * File created on: 06-11-2023 12:49:57
- * @ Last modified on: 27-11-2023 19:19:10 
+ * @ Last modified on: 29-11-2023 17:57:33 
  * 
  * Description: Footer styles.
  */
@@ -12,8 +12,9 @@
 const styles = {
 	footer: {
 		width: '100%',
-		padding: '2rem 0',
+		paddingTop: '2rem',
 		height: '5rem',
+		maxHeight: '6rem',
 		display: 'flex',
 		flexFlow: 'column nowrap',
 		alignItems: 'center',
@@ -27,6 +28,12 @@ const styles = {
 			padding:' 0 0.15rem',
 			color: '#e12e2e',
 			textDecoration: 'none'
+		},
+		'& abbr': {
+			cursor: 'help',
+			userSelect: 'none' as const,
+			textDecoration: 'underline',
+			textDecorationStyle: 'dotted' as const
 		}
 	},
 	links: {
