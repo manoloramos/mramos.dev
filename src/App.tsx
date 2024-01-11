@@ -4,13 +4,13 @@
  *  Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 24-10-2023 12:49:20
- *  Last modified on: 11-1-2024 00:14:54 
+ *  Last modified on: 11-1-2024 18:15:26 
  * 
  *  Description: Main App File
  */
 
 import Home from '@/pages';
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from '@emotion/react';
 import { useState } from 'react';
 import { Footer, Header } from '@/components/sections';
 import { structure, theme } from '@theme';
