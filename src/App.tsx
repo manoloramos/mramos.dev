@@ -4,13 +4,15 @@
  *  Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 24-10-2023 12:49:20
- *  Last modified on: 11-1-2024 18:15:26 
+ *  Last modified on: 11-1-2024 18:46:49 
  * 
  *  Description: Main App File
  */
 
+import { Global } from '@emotion/react';
 import Home from '@/pages';
 import { ThemeProvider } from '@emotion/react';
+import globalStyles from '@styles/globalStyles';
 import { useState } from 'react';
 import { Footer, Header } from '@/components/sections';
 import { structure, theme } from '@theme';
@@ -24,13 +26,16 @@ const App: React.FC = () => {
 	};
 
 	return (
-		<ThemeProvider theme={selectedTheme}>
-			<div css={structure.app}>
-				<Header themeSwitch={themeSwitch}/>
-					<Home />
-				<Footer />
-			</div>
-		</ThemeProvider>
+		<>
+			<Global styles={globalStyles}/>
+			<ThemeProvider theme={selectedTheme}>
+				<div css={structure.app}>
+					<Header themeSwitch={themeSwitch}/>
+						<Home />
+					<Footer />
+				</div>
+			</ThemeProvider>
+		</>
 	);
 };
 
