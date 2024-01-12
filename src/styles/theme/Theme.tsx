@@ -4,14 +4,14 @@
  *  Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 7-12-2023 20:11:13 
- *  Last modified on: 11-1-2024 00:13:14 
+ *  Last modified on: 12-1-2024 10:44:25 
  * 
  *  Description: Defines all the available themes for the App.
  */
 
 export const theme = {
 	light: {
-		background: '1',
+		background: 'red',
 		cardBackground: '',
 		buttonBackground: '',
 		headingText: '',
@@ -24,7 +24,7 @@ export const theme = {
 		borderHover: ''
 	},
 	dark: {
-		background: '',
+		background: 'blue',
 		cardBackground: '',
 		buttonBackground: '',
 		headingText: '',
@@ -47,21 +47,6 @@ export const general = {
 };
 
 export const structure = {
-	body: {
-		margin: '0',
-		display: 'flex',
-		placeItems: 'center',
-		minWidth: '320px',
-		minHeight: '100vh',
-		overflowX: 'hidden'
-	},
-	root: {
-		maxWidth: '1200px',
-		width: '100%',
-		margin: '0 auto',
-		padding: '2rem',
-		textAlign: 'center'
-	},
 	app: {
 		minHeight: '100vh',
 		display: 'flex',
@@ -94,7 +79,7 @@ export const colors = {
 
 	},
 	gray: {
-		
+		'0': '#f8f9fa'
 	},
 	misc: {
 		indigo: ''
