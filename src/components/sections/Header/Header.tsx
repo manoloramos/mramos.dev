@@ -4,7 +4,7 @@
  *  Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 06-11-2023 12:49:52
- *  Last modified on: 27-11-2023 17:08:29 
+ *  Last modified on: 12-1-2024 10:34:47 
  * 
  *  Description: Header component. Contains the main navigation elements and the light/dark toggle.
  */
@@ -16,6 +16,7 @@ import externalLink from '@assets/icons/external_link.svg';
 import logo from '@assets/images/logo/logo_sm.png';
 import { navigationItems } from '@ts/interfaces/navigationItems';
 import styles from './Header.styles';
+import { useTheme } from '@emotion/react';
 
 interface HeaderProps {
 	themeSwitch: () => void;
@@ -24,6 +25,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({
 	themeSwitch
 }) => {
+	const theme = useTheme();
 	
 	const mainNavItems: navigationItems[] = [
 		{ url: NavPaths.About, label: 'About me' },
@@ -36,7 +38,7 @@ const Header: React.FC<HeaderProps> = ({
 	];
 	
 	return (
-		<header css={styles.header}>
+		<header css={{...styles.header, ...theme}}>
 			<div css={styles.headerContainer}>
 				<div css={styles.navbarContainer}>
 					<a href={NavPaths.Home}>
