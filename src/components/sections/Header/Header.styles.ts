@@ -1,13 +1,15 @@
 /**
- * Project: manoloramos.dev
- * Author: Manolo Ramos
- * Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
+ *  Project: manoloramos.dev
+ *  Author: Manolo Ramos
+ *  Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
- * File created on: 06-11-2023 12:49:52
- * @ Last modified on: 29-11-2023 16:58:33 
+ *  File created on: 06-11-2023 12:49:52
+ *  Last modified on: 12-1-2024 10:40:24 
  * 
- * Description: Header component styles.
+ *  Description: Header component styles.
  */
+
+import { colors } from "@theme";
 
 const styles = {
 	header: {
@@ -74,7 +76,7 @@ const styles = {
 				paddingBottom: '0.15rem',
 			},
 			'& a:hover': {
-				color: 'grey',
+				color: colors.gray[0],
 				borderBottom: '2px solid skyblue'
 			},
 			'& div:last-child a': {
