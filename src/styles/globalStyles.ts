@@ -4,7 +4,7 @@
  *  Copyright: (C) 2024 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 11-1-2024 18:41:37 
- *  Last modified on: 11-1-2024 18:41:52 
+ *  Last modified on: 14-1-2024 19:39:39 
  * 
  *  Description: Defines the global styles used by the App.
  */
@@ -26,6 +26,14 @@ const globalStyles = css`
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 		-webkit-text-size-adjust: 100%;
+	}
+
+	html {
+		box-sizing: border-box;
+	}
+
+	*, *:before, *:after {
+		box-sizing: inherit;
 	}
 	
 	#root {
