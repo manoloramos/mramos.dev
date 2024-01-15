@@ -4,7 +4,7 @@
  *  Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 24-10-2023 12:49:20
- *  Last modified on: 11-1-2024 18:46:49 
+ *  Last modified on: 15-1-2024 20:52:12 
  * 
  *  Description: Main App File
  */
@@ -19,10 +19,11 @@ import { structure, theme } from '@theme';
 import '@styles/App.css';
 
 const App: React.FC = () => {
-	const [selectedTheme, setSelectedTheme] = useState(theme.light);
+	const { light, dark } = theme;
+	const [selectedTheme, setSelectedTheme] = useState(light);
 
 	const themeSwitch = () => {
-		setSelectedTheme(selectedTheme === theme.light ? theme.dark : theme.light);
+		setSelectedTheme(selectedTheme === light ? dark : light);
 	};
 
 	return (
