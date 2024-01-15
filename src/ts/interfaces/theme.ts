@@ -11,6 +11,10 @@
 
 import { Theme } from "@emotion/react";
 
+interface ThemeCollection {
+	light: ThemeProperties,
+	dark: ThemeProperties
+}
 interface ThemeProperties extends Theme {
 	background?: string,
 	cardBackground?: string,
@@ -25,4 +29,4 @@ interface ThemeProperties extends Theme {
 	borderHover?: string
 }
 
-export type { ThemeProperties };
+export type { ThemeCollection, ThemeProperties };
