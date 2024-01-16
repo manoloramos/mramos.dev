@@ -4,7 +4,7 @@
  *  Copyright: (C) 2024 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 15-1-2024 19:15:37 
- *  Last modified on: 15-1-2024 20:25:00 
+ *  Last modified on: 16-1-2024 22:48:54 
  * 
  *  Description: Contains interfaces aimed to extend and assist theming features.
  */
@@ -23,10 +23,15 @@ interface ThemeProperties extends Theme {
 	baseText?: string,
 	baseTextMuted?: string,
 	baseTextBright?: string,
-	link?: string,
+	link?: StyleRuleset | string,
 	linkHover?: string,
 	border?: string,
 	borderHover?: string
+}
+
+interface StyleRuleset {
+	background?: string,
+	color?: string
 }
 
 export type { ThemeCollection, ThemeProperties };
