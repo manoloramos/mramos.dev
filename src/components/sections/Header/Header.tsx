@@ -4,7 +4,7 @@
  *  Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 06-11-2023 12:49:52
- *  Last modified on: 17-1-2024 21:16:17 
+ *  Last modified on: 17-1-2024 21:34:35 
  * 
  *  Description: Header component. Contains the main navigation elements and the light/dark toggle.
  */
@@ -31,8 +31,10 @@ const Header: React.FC<HeaderProps> = ({
 		general
 	} = useTheme() as ThemeProperties;
 
+	// TODO: find an optimal way of asserting all returned values from useTheme().
 	const themedHeaderStyles = useMixTheme(styles.header, general!);
 	
+	// TODO: move these navigationItems to a dedicated file.
 	const mainNavItems: navigationItems[] = [
 		{ url: NavPaths.About, label: 'About me' },
 		{ url: NavPaths.Blog ,label: 'Blog' },
