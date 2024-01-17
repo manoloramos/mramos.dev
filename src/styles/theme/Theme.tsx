@@ -4,12 +4,12 @@
  *  Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 7-12-2023 20:11:13 
- *  Last modified on: 17-1-2024 21:16:41 
+ *  Last modified on: 17-1-2024 21:42:44 
  * 
  *  Description: Defines all the available themes for the App.
  */
 
-import { ThemeCollection } from "@/ts/interfaces/theming";
+import { ThemeCollection } from "@ts/interfaces/theming";
 
 export const theme: ThemeCollection = {
 	light: {
