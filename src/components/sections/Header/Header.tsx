@@ -4,18 +4,20 @@
  *  Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 06-11-2023 12:49:52
- *  Last modified on: 12-1-2024 10:34:47 
+ *  Last modified on: 17-1-2024 21:16:17 
  * 
  *  Description: Header component. Contains the main navigation elements and the light/dark toggle.
  */
 
 import { NavPaths } from '@/ts/enums/navigation';
 import React from 'react';
+import { ThemeProperties } from '@/ts/interfaces/theming';
 import _ from 'lodash';
 import externalLink from '@assets/icons/external_link.svg';
 import logo from '@assets/images/logo/logo_sm.png';
 import { navigationItems } from '@ts/interfaces/navigationItems';
 import styles from './Header.styles';
+import useMixTheme from '@utils/hooks/useMixTheme';
 import { useTheme } from '@emotion/react';
 
 interface HeaderProps {
@@ -25,7 +27,11 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({
 	themeSwitch
 }) => {
-	const theme = useTheme();
+	const {
+		general
+	} = useTheme() as ThemeProperties;
+
+	const themedHeaderStyles = useMixTheme(styles.header, general!);
 	
 	const mainNavItems: navigationItems[] = [
 		{ url: NavPaths.About, label: 'About me' },
@@ -38,7 +44,7 @@ const Header: React.FC<HeaderProps> = ({
 	];
 	
 	return (
-		<header css={{...styles.header, ...theme}}>
+		<header css={themedHeaderStyles}>
 			<div css={styles.headerContainer}>
 				<div css={styles.navbarContainer}>
 					<a href={NavPaths.Home}>
