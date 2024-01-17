@@ -4,39 +4,63 @@
  *  Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 7-12-2023 20:11:13 
- *  Last modified on: 15-1-2024 20:50:20 
+ *  Last modified on: 17-1-2024 21:16:41 
  * 
  *  Description: Defines all the available themes for the App.
  */
 
-import { ThemeCollection } from "@/ts/interfaces/theme";
+import { ThemeCollection } from "@/ts/interfaces/theming";
 
 export const theme: ThemeCollection = {
 	light: {
-		background: '',
-		cardBackground: '',
-		buttonBackground: 'red',
-		headingText: '',
-		baseText: '',
-		baseTextMuted: '',
-		baseTextBright: '',
-		link: '',
-		linkHover: '',
-		border: '',
-		borderHover: ''
+		general: {
+			background: ''
+		},
+		card: {
+			background: ''
+		},
+		button: {
+			background: ''
+		},
+		headingText: {
+			color: ''
+		},
+		baseText: {
+			color: ''
+		},
+		link: {
+			color: '',
+			hover: ''
+		},
+		border: {
+			color: '',
+			hover: ''
+		}
 	},
 	dark: {
-		background: '',
-		cardBackground: '',
-		buttonBackground: 'blue',
-		headingText: '',
-		baseText: '',
-		baseTextMuted: '',
-		baseTextBright: '',
-		link: '',
-		linkHover: '',
-		border: '',
-		borderHover: ''
+		general: {
+			background: ''
+		},
+		card: {
+			background: ''
+		},
+		button: {
+			background: ''
+		},
+		headingText: {
+			color: ''
+		},
+		baseText: {
+			color: ''
+		},
+		link: {
+			color: '',
+			hover: ''
+		},
+		border: {
+			color: '',
+			hover: ''
+		}
 	}
 };
 
