@@ -4,9 +4,9 @@
  *  Copyright: (C) 2024 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 18-1-2024 23:19:42 
- *  Last modified on: 18-1-2024 23:21:13 
+ *  Last modified on: 18-1-2024 23:43:47 
  * 
- *  Description: Navigation items.
+ *  Description: Defines the navigation elements for the Header component.
  */
 
 import { NavPaths } from "@ts/enums/navigation";

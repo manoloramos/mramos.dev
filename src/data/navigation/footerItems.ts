@@ -4,12 +4,12 @@
  *  Copyright: (C) 2024 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 18-1-2024 23:19:54 
- *  Last modified on: 18-1-2024 23:32:01 
+ *  Last modified on: 18-1-2024 23:43:25 
  * 
- *  Description: Footer items.
+ *  Description: Defines the navigation elements for the Footer component.
  */
 
-import { FooterLinks } from "@/ts/enums/navigation";
+import { FooterLinks } from "@ts/enums/navigation";
 import github from '@assets/icons/github_lm.svg';
 import { navigationItems } from "@ts/interfaces/navigationItems";
 import netlify from '@assets/icons/netlify_lm.svg';
