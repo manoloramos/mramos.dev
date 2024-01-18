@@ -4,7 +4,7 @@
  * Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
  * File created on: 24-10-2023 12:49:20
- * Last modified on: 18-1-2024 23:27:06 
+ * Last modified on: 18-1-2024 23:39:59 
  * 
  * Description: Vite config file
  */
@@ -26,7 +26,7 @@ export default defineConfig({
 			'@services': path.resolve(__dirname, './src/services'),
 			'@styles': path.resolve(__dirname, './src/styles'),
 			'@theme': path.resolve(__dirname, './src/styles/theme/Theme'),
-			'@types': path.resolve(__dirname, './src/types'),
+			'@ts': path.resolve(__dirname, './src/ts'),
 			'@utils': path.resolve(__dirname, './src/utils'),
 		}
 	}
