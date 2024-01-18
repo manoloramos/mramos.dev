@@ -4,28 +4,17 @@
  *  Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 06-11-2023 12:49:57
- *  Last modified on: 17-1-2024 21:34:44 
+ *  Last modified on: 18-1-2024 23:33:45 
  * 
  *  Description: Footer component. Contains copyright, links & last build info.
  */
 
-import { FooterLinks } from "@/ts/enums/navigation";
 import React from "react";
 import _ from "lodash";
-import github from '@assets/icons/github_lm.svg';
-import { navigationItems } from "@ts/interfaces/navigationItems";
-import netlify from '@assets/icons/netlify_lm.svg';
+import { footerNavItems } from "@data";
 import styles from "./Footer.styles";
-import vite from '@assets/icons/vite.svg';
 
 interface FooterProps {}
-
-// TODO: move these navigationItems to a dedicated file.
-const footerNavItems: navigationItems[] = [
-	{ url: FooterLinks.Vite, label: 'Vite', icon: vite},
-	{ url: FooterLinks.Netlify ,label: 'Netlify', icon: netlify },
-	{ url: FooterLinks.GitHub, label: 'GitHub', icon: github },
-];
 
 const Footer: React.FC<FooterProps> = () => {
 	return (
