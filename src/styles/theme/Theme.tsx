@@ -4,7 +4,7 @@
  *  Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 7-12-2023 20:11:13 
- *  Last modified on: 17-1-2024 21:42:44 
+ *  Last modified on: 26-1-2024 22:45:44 
  * 
  *  Description: Defines all the available themes for the App.
  */
@@ -66,7 +66,7 @@ export const theme: ThemeCollection = {
 
 export const general = {
 	borders: {
-		radius: '4px',
+		radius: '',
 		color: '',
 		hover: ''
 	}
