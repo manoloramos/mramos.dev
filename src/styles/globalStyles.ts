@@ -4,7 +4,7 @@
  *  Copyright: (C) 2024 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 11-1-2024 18:41:37 
- *  Last modified on: 14-1-2024 19:55:36 
+ *  Last modified on: 28-1-2024 11:41:42 
  * 
  *  Description: Defines the global styles used by the App.
  */
@@ -17,8 +17,6 @@ const globalStyles = css`
 		font-weight: 400;
 	
 		color-scheme: light dark;
-		color: rgba(255, 255, 255, 0.87);
-		background-color: #242424;
 
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;

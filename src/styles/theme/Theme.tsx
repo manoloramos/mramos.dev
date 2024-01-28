@@ -41,7 +41,7 @@ export const theme: ThemeCollection = {
 	dark: {
 		colorScheme: 'dark',
 		general: {
-			background: ''
+			background: '#242424'
 		},
 		card: {
 			background: ''
@@ -53,7 +53,7 @@ export const theme: ThemeCollection = {
 			color: ''
 		},
 		baseText: {
-			color: ''
+			color: 'rgba(255, 255, 255, 0.87)'
 		},
 		link: {
 			color: '',
