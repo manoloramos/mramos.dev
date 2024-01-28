@@ -4,7 +4,7 @@
  *  Copyright: (C) 2024 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 15-1-2024 19:15:37 
- *  Last modified on: 17-1-2024 21:01:44 
+ *  Last modified on: 28-1-2024 11:26:30 
  * 
  *  Description: Contains interfaces aimed to extend and assist theming features.
  */
@@ -16,6 +16,7 @@ interface ThemeCollection {
 	dark: ThemeProperties
 }
 interface ThemeProperties extends Theme {
+	colorScheme: 'light' | 'dark',
 	general?: StyleRuleset,
 	card?: StyleRuleset,
 	button?: StyleRuleset,
