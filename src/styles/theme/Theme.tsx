@@ -4,7 +4,7 @@
  *  Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 7-12-2023 20:11:13 
- *  Last modified on: 26-1-2024 22:45:44 
+ *  Last modified on: 28-1-2024 11:05:23 
  * 
  *  Description: Defines all the available themes for the App.
  */
@@ -13,6 +13,7 @@ import { ThemeCollection } from "@ts/interfaces/theming";
 
 export const theme: ThemeCollection = {
 	light: {
+		colorScheme: 'light',
 		general: {
 			background: ''
 		},
@@ -38,6 +39,7 @@ export const theme: ThemeCollection = {
 		}
 	},
 	dark: {
+		colorScheme: 'dark',
 		general: {
 			background: ''
 		},
