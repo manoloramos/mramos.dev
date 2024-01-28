@@ -4,7 +4,7 @@
  *  Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 06-11-2023 12:49:52
- *  Last modified on: 18-1-2024 23:30:44 
+ *  Last modified on: 28-1-2024 11:19:30 
  * 
  *  Description: Header component. Contains the main navigation elements and the light/dark toggle.
  */
@@ -13,7 +13,8 @@ import { NavPaths } from '@/ts/enums/navigation';
 import React from 'react';
 import { ThemeProperties } from '@/ts/interfaces/theming';
 import _ from 'lodash';
-import logo from '@assets/images/logo/logo_sm.png';
+import logoDark from '@assets/images/logo/logo_sm_dark.png';
+import logoLight from '@assets/images/logo/logo_sm_light.png';
 import styles from './Header.styles';
 import useMixTheme from '@utils/hooks/useMixTheme';
 import { useTheme } from '@emotion/react';
@@ -27,6 +28,7 @@ const Header: React.FC<HeaderProps> = ({
 	themeSwitch
 }) => {
 	const {
+		colorScheme,
 		general
 	} = useTheme() as ThemeProperties;
 
@@ -38,7 +40,13 @@ const Header: React.FC<HeaderProps> = ({
 			<div css={styles.headerContainer}>
 				<div css={styles.navbarContainer}>
 					<a href={NavPaths.Home}>
-						<img src={logo} alt="Logo"/>
+						{
+							colorScheme === 'light' ?
+								<img src={logoLight} alt="Logo"/>
+							:
+								<img src={logoDark} alt="Logo"/>
+						
+						}
 						<span>Manolo Ramos</span>
 					</a>
 					<nav>
