@@ -4,17 +4,16 @@
  *  Copyright: (C) 2024 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 11-1-2024 18:41:37 
- *  Last modified on: 28-1-2024 11:41:42 
+ *  Last modified on: 29-1-2024 10:20:21 
  * 
  *  Description: Defines the global styles used by the App.
  */
 
-import { css } from "@emotion/react";
+import { css } from '@emotion/react';
 
 const globalStyles = css`
 	:root {
 		font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-		font-weight: 400;
 	
 		color-scheme: light dark;
 
