@@ -4,9 +4,9 @@
  *  Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 24-10-2023 20:20:11
- *  Last modified on: 10-1-2024 23:56:10 
+ *  Last modified on: 29-1-2024 10:23:23 
  * 
- *  Description: Layout component, served as the principal container for the App.
+ *  Description: Layout component, which serves as the principal container for the App.
  */
 
 import styles from './Layout.styles';
