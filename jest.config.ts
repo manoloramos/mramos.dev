@@ -3,8 +3,8 @@
  * https://jestjs.io/docs/configuration
  */
 
-import { pathsToModuleNameMapper ,JestConfigWithTsJest } from 'ts-jest';
 import { compilerOptions } from "./tsconfig.paths.json";
+import { JestConfigWithTsJest, pathsToModuleNameMapper } from 'ts-jest';
 
 const jestConfig: JestConfigWithTsJest = {
   preset: 'ts-jest',
