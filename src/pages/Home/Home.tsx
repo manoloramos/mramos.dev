@@ -27,7 +27,7 @@ const Home: React.FC = () => {
 
 				<h2>Hello, world!</h2>
 				<h3>Welcome to my personal website 👋🏻</h3>
-				<h3>This site is beign developed using Vite + React</h3>
+				<h3>This site is being developed using Vite + React</h3>
 			</div>
 		</Layout>
 	);
