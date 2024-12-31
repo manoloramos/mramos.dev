@@ -4,7 +4,7 @@
  *  Copyright: (C) 2024 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 11-1-2024 18:41:37 
- *  Last modified on: 29-1-2024 13:08:22 
+ *  Last modified on: 31-12-2024 16:48:39
  * 
  *  Description: Defines the global styles used by the App. 
  *  Theme integration is also present here.
@@ -44,7 +44,7 @@ const globalStyles = (theme: ThemeProperties) => css`
 	body {
 		min-height: 100vh;
 		min-width: 320px;
-		background: ${theme.general!.background};
+		background: ${theme.baseStyles!.background};
 		margin: 0;
 		line-height: 1.5;
 		display: flex;

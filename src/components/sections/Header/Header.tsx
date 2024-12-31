@@ -4,7 +4,7 @@
  *  Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 06-11-2023 12:49:52
- *  Last modified on: 31-12-2024 16:28:58
+ *  Last modified on: 31-12-2024 16:45:23
  * 
  *  Description: Header component. Contains the main navigation elements and the light/dark toggle.
  */
@@ -29,10 +29,10 @@ const Header: React.FC<HeaderProps> = ({
 }) => {
 	const {
 		colorScheme,
-		general
+		baseStyles
 	} = useTheme() as ThemeProperties;
 
-	const themedHeaderStyles = useMixTheme(styles.header, general);
+	const themedHeaderStyles = useMixTheme(styles.header, baseStyles);
 
 	return (
 		<header css={themedHeaderStyles}>

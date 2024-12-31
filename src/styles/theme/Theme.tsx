@@ -4,7 +4,7 @@
  *  Copyright: (C) 2023 Manolo Ramos - All Rights Reserved
  * 
  *  File created on: 7-12-2023 20:11:13 
- *  Last modified on: 29-1-2024 11:40:20 
+ *  Last modified on: 31-12-2024 16:50:33
  * 
  *  Description: Defines all the available themes for the App.
  */
@@ -80,7 +80,7 @@ export const fonts = {
 export const theme: ThemeCollection = {
 	light: {
 		colorScheme: 'light',
-		general: {
+		baseStyles: {
 			background: colors.white.base
 		},
 		card: {
@@ -107,7 +107,7 @@ export const theme: ThemeCollection = {
 	},
 	dark: {
 		colorScheme: 'dark',
-		general: {
+		baseStyles: {
 			background: colors.gray.darker
 		},
 		card: {
